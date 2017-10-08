@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link type="text/css" rel="stylesheet" href="styles/nip.css">
+    <script src="https://use.fontawesome.com/b41f23ec05.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="./js/include.js"></script>
+    <title>NIP - Ninjas in Pyjamas</title>
+</head>
+
+<body>
+
+<div data-include="./header.html"></div>
+
+<div class="content">
+    <div class="slideshow-container">
+        <a href="./product.html">
+            <div class="mySlides fade">
+                <img src="assets/home-getright.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/home-xizt.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/home-draken.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/home-forest.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/home-rez.png" style="width:100%">
+            </div>
+        </a>
+    </div>
+</div>
+
+<div data-include="./footer.html"></div>
+
+</body>
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName('mySlides');
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+</script>
+</html>

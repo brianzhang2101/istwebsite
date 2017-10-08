@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* General */
+html {
+  background-color: #131314;
+  color: #FFF;
+}
+
+body {
+  /*font-family: Verdana, sans-serif;*/
+}
+
+* {
+  box-sizing: border-box
+}
+
+/* Header */
+div.header {
+  height: 12rem;
+  display: block;
+  background: #4c4650 url('../assets/header/banner-50.png') no-repeat no-repeat center;
+  background-size: cover;
+  border-bottom: 5px solid #a98c66;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  padding-bottom: 1rem;
+  box-sizing: content-box;
+}
+
+img#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 12rem;
+  width: 12rem;
+  transition: 0.15s all ease;
+}
+img#logo:hover {
+  transform: scale(1.03);
+}
+img#logo:active {
+  transform: scale(1);
+}
+
+i#cart {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menu */
+div.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4rem;
+  margin: 0 auto;
+}
+
+.menu .left-half, .menu .right-half {
+  width: 50%;
+  float: left;
+}
+
+.menu .left-half {
+  padding-right: 8rem;
+}
+
+.menu .right-half {
+  padding-left: 8rem;
+}
+
+.menu .button {
+  display: inline-block;
+  float: left;
+  padding: .5rem 1.5rem;
+  margin: 0.5rem 0.75rem;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.15s all ease-in-out;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #a98c66;
+}
+
+.menu .button:hover {
+  border-color: #dcba8d;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.menu .button:active {
+  border-color: #887050;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  overflow: hidden;
+  background-color: #303033;
+}
+
+.mobile-menu a {
+  display: block;
+  font-size: 1.25em;
+  color: white;
+  text-align: center;
+  padding: 20px 64px;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  background-color: #111;
+}
+
+/* Content */
+div.content {
+  padding: 3rem 0;
+}
+
+footer#foot {
+  background-color: #303033;
+}

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+img.preview-image {
+  cursor: pointer;
+}
+
+#preview {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 2rem;
+  transition: .5s ease;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+div.content {
+  transition: filter 0.2s;
+}
+
+div.content.blur {
+  filter: blur(10px);
+}
+
+#preview.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#preview .name {
+  color: white;
+  font-size: 2rem;
+}
+
+#preview .description {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#preview .close {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+#preview .image {
+  display: block;
+  height: 90%;
+  width: auto;
+  margin: 0 auto;
+}

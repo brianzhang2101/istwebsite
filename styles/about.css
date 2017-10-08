@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.player-info {
+  padding: 1rem 0.5rem !important;
+  margin: 0;
+}
+.player-info img:hover {
+  border-color: #424242;
+  opacity: 1;
+}
+.player-info img.active {
+  border-color: #a98c66;
+  opacity: 1;
+}
+.player-info img {
+  border: 2px solid transparent;
+  width: 100%;
+  height: auto;
+  float: left;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.15s all ease;
+}
+
+.info-text h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.info-text .alias {
+  color: #a98c66;
+}

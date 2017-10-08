@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.sponsor {
+  padding: 0 !important;
+}
+
+.sponsor img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
